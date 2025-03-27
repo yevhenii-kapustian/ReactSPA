@@ -1,0 +1,54 @@
+.homePageService {
+    padding: 0 7.5rem;
+}
+
+.homePageServiceTitle{
+    margin: 70px auto 0;
+    width: 38rem;
+}
+
+.homePageServiceTitle h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.homePageServiceTitle p {
+    margin: 16px 0 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.homePageServiceStatistics {
+    margin: 70px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 95px;
+}
+
+.homePageServiceStatistics h4 {
+    font-size: 70px;
+    font-weight: 200;
+    text-align: center;
+    background: linear-gradient(to right, #136CB5 0%, #49BBBD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.homePageServiceStatistics p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .homePageService {
+        padding: 0 2rem;
+    }
+
+    .homePageServiceTitle{
+        width: 100%;
+    }
+}

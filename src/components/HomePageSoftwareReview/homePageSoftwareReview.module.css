@@ -1,0 +1,93 @@
+.homePageSoftware {
+    margin: 70px 0 70px 0;
+    padding: 0;
+}
+
+.homePageSoftwareTitle {
+    width: 35rem;
+    margin: 0 auto;
+}
+
+.homePageSoftwareTitle h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: #2F327D;
+}
+
+.homePageSoftwareTitle span {
+    color: #00CBB8;
+}
+
+.homePageSoftwareTitle p {
+    margin: 20px 0 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #696984;
+}
+
+.homePageSoftwareMainContainer {
+    margin: 130px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.homePageSoftwareMain {
+    display: flex;
+    align-items: center;
+    padding: 100px 50px 50px;
+    width: 450px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.homePageSoftwareMainImage img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.homePageSoftwareMainTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homePageSoftwareMainTitle h3 {
+    color: #2F327D;
+    width: 19rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+.homePageSoftwareMainTitle p {
+    margin: 20px 0 0;
+    color: #696984;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .homePageSoftware {
+        padding: 0 2rem;
+    }
+
+    .homePageSoftwareTitle {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .homePageSoftwareMain {
+        width: 100%;
+    }
+
+    .homePageSoftwareMainTitle h3 {
+        width: 100%;
+    }
+}

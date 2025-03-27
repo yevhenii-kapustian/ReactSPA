@@ -1,0 +1,149 @@
+.authorization a {
+    color: black;
+    font-weight: 200;
+}
+
+.authorization p {
+    font-weight: 200;
+}
+
+.authorization {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.authorizationImage {
+    display: block;
+    position: relative;
+}
+
+.authorizationImage img {
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.authorizationImageText {
+    padding: 0 10px 10px 0;
+    position: absolute;
+    bottom: 55px;
+    left: 70px;
+}
+
+.authorizationImageText h2 {
+    color: white;
+    font-size: 37px;
+}
+
+.authorizationImageText p {
+    color: white;
+    font-size: 25px;
+}
+
+.authorizationTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.authorizationSwitchButtons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 330px;
+    background-color: hsla(181, 47%, 51%, 0.6);
+    border-radius: 60px;
+    gap: 10px;
+}
+
+.authorizationSwitchButtons button {
+    width: 165px;
+    padding: 10px 50px;
+    border-radius: 60px;
+    color: white;
+}
+
+.active {
+    background-color: #49BBBD;
+}
+
+.inactive {
+    transition: all 0.3s;
+}
+
+.inactive:hover {
+    background-color: #49BBBD;
+}
+
+.authorizationForm {
+    margin: 55px 0;
+}
+
+.authorizationMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.authorizationForm form {
+    margin: 45px 0;
+}
+
+.authorizationFormMainItem {
+    margin: 30px 0 0;
+}
+
+.authorizationFormMain {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.authorizationFormMain input {
+    padding: 12px 30px;
+    border-radius: 60px;
+    border: solid 1px #49BBBD;
+}
+
+.authorizationFormDetails {
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.authorizationFormDetails label {
+    display: flex;
+    gap: 10px;
+    font-weight: 200;
+}
+
+.authorizationButtonContainer {
+    margin: 60px 0 0;
+    display: flex;
+    justify-content: end;
+}
+
+.authorizationButtonContainer button {
+    padding: 12px 90px;
+    color: white;
+    background-color: #49BBBD;
+    border-radius: 60px;
+}
+
+@media screen and (max-width: 850px) {
+    .authorizationImage {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .authorizationSwitchButtons {
+        width: 100%;
+    }
+
+    .authorizationSwitchButtons button {
+        width: 100%;
+    }
+}

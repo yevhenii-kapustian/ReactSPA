@@ -1,0 +1,158 @@
+.homePage {
+    padding: 0 7.5rem;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #49BBBD;
+    border-radius: 0 0 30% 30%;
+    overflow: hidden;
+    position: relative;
+}
+
+.homeMain {
+    width: 40rem;
+    text-align: start;
+}
+
+.homeMainTitle h1 {
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+}
+
+.homeMainTitle span {
+    color: #F48C06;
+}
+
+.homeMainTitle p {
+    margin: 35px 0 0;
+    width: 28rem;
+    font-size: 20px;
+    color: white;
+}
+
+.homeMainButtons {
+    margin: 50px 0 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.homeMainButtons button {
+    padding: 20px 35px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 80px;
+}
+
+.homeMainButtonsPause {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.homeMainButtonsPause p {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.homeMainTeenage {
+    position: relative;
+}
+
+.homeMainTeenage img {
+    object-fit: cover;
+}
+
+.homeMainMarks {
+    position: absolute;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.admission {
+    bottom: 300px;
+    right: -40px;
+}
+
+.analytics {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    border-radius: 20px;
+    background-color: #F3627C;
+}
+
+.assisted {
+    bottom: 130px;
+}
+
+.homeMainMarks h4 {
+    color: #595959;
+    font-weight: 400;
+}
+
+.homeMainMarks p {
+    color: #595959;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1168px) {
+    .homePage {
+        border-radius: 0 0 15% 15%;
+    }    
+
+    .homeMainTitle h1 {
+        font-size: 60px;
+    }
+
+    .homeMainTitle p {
+        margin: 35px auto 0;
+        font-size: 23px;
+    }
+
+    .homeMainTeenage {
+        display: none;
+    }
+
+    .homeMain {
+        text-align: center;
+    }
+
+    .homeMainButtons {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 500px)  {
+    .homePage {
+        padding: 0 2rem;
+    }
+
+    .homeMain {
+        width: 100%;
+    }
+
+    .homeMainTitle h1 {
+        font-size: 48px;
+    }
+
+    .homeMainTitle p {
+        width: 100%;
+        font-size: 18px;
+    }
+}

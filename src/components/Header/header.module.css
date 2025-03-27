@@ -1,0 +1,136 @@
+.header {
+    padding: 1.9rem 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #49BBBD;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.099);
+    z-index: 1;
+}
+
+.headerWhite {
+    padding: 1.9rem 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.headerMainLinks {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 5rem;
+}
+
+.headerLinks a {
+    color: white;
+}
+
+.headerLinksGrey a {
+    color: #5B5B5B;
+}
+
+.headerLinksAuthorization {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.headerLoginHome a {
+    padding: 0.8rem 3rem;
+    color: #5B5B5B;
+    background-color: white;
+    border-radius: 80px;
+    transition: all 0.3s;
+}
+
+.headerLoginHome a:hover {
+    color: #4a4a4a;
+    background-color: rgb(215, 215, 215);
+}
+
+.headerLogin a {
+    padding: 0.8rem 3rem;
+    color: #ffffff;
+    background-color: rgb(144, 144, 144);
+    border-radius: 80px;
+    transition: all 0.3s;
+}
+
+.headerLogin a:hover {
+    color: #5B5B5B;
+    background-color: #ffffff;
+}
+
+.headerSignUpHome a {
+    padding: 0.8rem 3rem;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 80px;
+    transition: all 0.3s;
+}
+
+.headerSignUpHome a:hover {
+    color: #686868;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.headerSignUp a {
+    padding: 0.8rem 3rem;
+    color: #5B5B5B;
+    background-color: #ffffff;
+    border-radius: 80px;
+    transition: all 0.3s;
+}
+
+.headerSignUp a:hover {
+    color: rgb(141, 141, 141);
+    background-color: #d9d9d9;
+    
+}
+
+.headerLinksCon {
+    display: block;
+}
+
+.burgerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.headerBurgerLinks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none; 
+}
+
+.headerBurgerLinks.open {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.headerBurgerLinks.close {
+    opacity: 0;
+    transform: translateX(-20px);
+    pointer-events: none;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 1.9rem 2rem;
+    }
+
+    .headerWhite {
+        padding: 1.9rem 2rem;
+    }
+}

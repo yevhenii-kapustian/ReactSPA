@@ -1,0 +1,82 @@
+.footer {
+    padding: 60px 0 20px;
+    width: 100%;
+    background-color: #252641;
+}
+
+.footerBrandTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.footer span {
+    color: #B2B3CF;
+}
+
+.footerBrandTitle h3 {
+    color: white;
+}
+
+.footerMain {
+    margin: 60px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerMain h3 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #B2B3CF;
+}
+
+.footerMain form {
+    display: block;
+}
+
+.footerMain input {
+    width: 15rem;
+    margin-right: 0.5rem;
+    padding: 12px 20px;
+    color: #B2B3CF;
+    border: solid 1px #B2B3CF;
+    border-radius: 50px;
+    background: none;
+}
+
+.footerMain button {
+    padding: 12px 50px;
+    color: white;
+    background-color: #49BBBD;
+    border-radius: 50px;
+}
+
+.footerCooperationContainer {
+    margin: 60px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerCooperationContainer p {
+    font-weight: 300;
+    color: #B2B3CF;
+}
+
+.footerCooperation {
+    display: flex;
+    gap: 12px;
+}
+
+@media screen and (max-width: 500px) {
+    .footerMain input {
+        width: 70%;
+    }
+
+    .footerMain form {
+        display: flex;
+    }
+}
