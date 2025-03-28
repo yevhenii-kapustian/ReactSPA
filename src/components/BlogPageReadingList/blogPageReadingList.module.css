@@ -1,0 +1,51 @@
+.readingBlogList {
+    padding: 70px 7.5rem;
+}
+
+.readingBlogList h2 {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.readingBlogListItems {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.blogItem {
+    width: 100%;
+    max-width: 300px;
+    min-width: 0px;
+    position: relative;
+}
+
+.blogItem img {
+    border-radius: 12px;
+}
+
+.blogItem h3 {
+    padding: 16px 70px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 600;
+    border-radius: 12px;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: hsla(0, 0%, 100%, 0.7);
+}
+
+@media screen and (max-width: 890px) {
+    .blogItem {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .readingBlogList {
+        padding: 70px 2rem;
+    }
+}
