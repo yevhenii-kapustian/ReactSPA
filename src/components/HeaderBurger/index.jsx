@@ -1,14 +1,14 @@
 import styles from './headerBurger.module.css'
 import { headerLinks } from '../../data/data'
 
-const HeaderBurger = ({setCurrentPage}) => {
+const HeaderBurger = ({isHome, setCurrentPage}) => {
 
     const handleCurrentPage = (page) => {
         setCurrentPage(page)
     }
 
     return(
-            <ul className={styles.headerBurgerLinks}>
+            <ul className={isHome ? styles.headerBurgerLinksHome : styles.headerBurgerLinks}>
                  {[...new Set(headerLinks.map(link => link.link))].map((item, index) => (
                     <li key={index}>
                         <a onClick={() => handleCurrentPage(item)} href="#">{item}</a>

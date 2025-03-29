@@ -43,7 +43,7 @@ const Header = ({setCurrentPage, isHome}) => {
                     <div onClick={toggleMenu} className={styles.burgerBtn}>
                         {isHome ? <DotsThreeOutline color='white' size={32} /> : <DotsThreeOutline color='#5B5B5B' size={32} />}
                         <div className={`${styles.headerBurgerLinks} ${openBurger ? styles.open : styles.close}`}>
-                            <HeaderBurger setCurrentPage={setCurrentPage} />
+                            <HeaderBurger isHome={isHome} setCurrentPage={setCurrentPage} />
                         </div>
                     </div>
                 )}
